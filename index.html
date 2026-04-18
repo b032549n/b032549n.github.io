@@ -4,118 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariame Barry | Portfolio</title>
-
-    <style>
-        /* ---------- GLOBAL STYLES ---------- */
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f7f9fc;
-            color: #333;
-        }
-
-        a { text-decoration: none; color: inherit; }
-
-        h1, h2, h3 { margin: 0; }
-
-        /* ---------- NAVBAR ---------- */
-        nav {
-            background: #1e90ff;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            margin-left: 20px;
-            font-weight: 500;
-            color: white;
-        }
-
-        /* ---------- HERO SECTION ---------- */
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(to bottom right, #1e90ff, #4aa3ff);
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        /* ---------- SECTIONS ---------- */
-        section {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            color: #1e90ff;
-            margin-bottom: 20px;
-            font-size: 32px;
-        }
-
-        /* ---------- ABOUT SECTION ---------- */
-        .about-box {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            line-height: 1.7;
-        }
-
-        /* ---------- PROJECT GRID ---------- */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.2s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card h3 {
-            color: #1e90ff;
-            margin-bottom: 10px;
-        }
-
-        /* ---------- FOOTER ---------- */
-        footer {
-            background: #1e90ff;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 60px;
-        }
-
-        /* ---------- MOBILE ---------- */
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 32px; }
-            nav { padding: 15px 20px; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -124,9 +13,10 @@
     <nav>
         <strong>Mariame Barry</strong>
         <div>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="#professional-development">Development</a>
         </div>
     </nav>
 
@@ -136,94 +26,49 @@
         <p>Creating clean, modern and user‑friendly digital experiences</p>
     </div>
 
-    <!-- ---------- ABOUT SECTION ---------- -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-box">
-            <p>
-                I’m a second-year Computer Science student at Staffordshire University specialising in 
-                Web Development and UI/UX Design. I enjoy creating clean, user-friendly digital experiences 
-                using HTML, CSS, JavaScript, and Figma.
-            </p>
-        </div>
-    </section>
-
-    <!-- ---------- PROJECTS SECTION ---------- -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>Web Development Project</h3>
-                <p>Built a multi-page responsive website using HTML, CSS, and JavaScript. Applied accessibility and layout principles.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Mobile App Design Project</h3>
-                <p>Designed a mobile app interface in Figma for new university students. Created wireframes and prototypes.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Cyber Security Group Project</h3>
-                <p>Collaborated with peers to research security concepts and produce a structured report.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ---------- CONTACT SECTION ---------- -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="about-box">
-            <p>Email: <strong>barryjalloh19@gmail.com</strong></p>
-            <p>GitHub: <strong>github.com/b032549n</strong></p>
-            <p>Location: Stoke-on-Trent, UK</p>
-        </div>
-    </section>
+    <!-- ---------- PROFESSIONAL DEVELOPMENT SECTION ---------- -->
     <section id="professional-development">
-    <h2>Professional Development</h2>
+        <h2>Professional Development</h2>
 
-    <div class="about-box">
-        <h3>Skills Audit</h3>
-        <p><strong>Skills in Practice:</strong></p>
-        <ul>
-            <li>Requirements gathering and analysing user needs</li>
-            <li>Basic system design and structuring information</li>
-            <li>Documentation and academic report writing</li>
-            <li>Teamworking and collaboration</li>
-            <li>Communicating technical ideas</li>
-            <li>HTML, CSS, JavaScript fundamentals</li>
-            <li>Responsive design and accessibility awareness</li>
-            <li>Basic Git version control</li>
-            <li>Basic Figma skills</li>
-            <li>User‑centred design awareness</li>
-        </ul>
+        <div class="about-box">
+            <h3>Skills Audit</h3>
+            <p><strong>Skills in Practice:</strong></p>
+            <ul>
+                <li>Requirements gathering and analysing user needs</li>
+                <li>Basic system design and structuring information</li>
+                <li>Documentation and academic report writing</li>
+                <li>Teamworking and collaboration</li>
+                <li>Communicating technical ideas</li>
+                <li>HTML, CSS, JavaScript fundamentals</li>
+                <li>Responsive design and accessibility awareness</li>
+                <li>Basic Git version control</li>
+                <li>Basic Figma skills</li>
+                <li>User‑centred design awareness</li>
+            </ul>
 
-        <h3>STAR Example</h3>
-        <p><strong>Situation:</strong> Designed a mobile app for new university students.</p>
-        <p><strong>Task:</strong> Gather user needs and convert them into design requirements.</p>
-        <p><strong>Action:</strong> Created a questionnaire, analysed responses, identified key features, and produced wireframes in Figma.</p>
-        <p><strong>Result:</strong> Lecturer praised the user‑centred approach.</p>
+            <h3>STAR Example</h3>
+            <p><strong>Situation:</strong> Designed a mobile app for new university students.</p>
+            <p><strong>Task:</strong> Gather user needs and convert them into design requirements.</p>
+            <p><strong>Action:</strong> Created a questionnaire, analysed responses, identified key features, and produced wireframes in Figma.</p>
+            <p><strong>Result:</strong> Lecturer praised the user‑centred approach.</p>
 
-        <h3>Skills to Develop</h3>
-        <ul>
-            <li>Advanced JavaScript (DOM, APIs, React)</li>
-            <li>UI/UX tool proficiency</li>
-            <li>Confidence in presenting design decisions</li>
-        </ul>
+            <h3>Skills to Develop</h3>
+            <ul>
+                <li>Advanced JavaScript (DOM, APIs, React)</li>
+                <li>UI/UX tool proficiency</li>
+                <li>Confidence in presenting design decisions</li>
+            </ul>
 
-        <h3>Career Plan (SMART)</h3>
-        <ul>
-            <li>Improve JavaScript skills within 3–6 months</li>
-            <li>Develop UI/UX skills within 3 months</li>
-            <li>Attend careers workshops throughout the year</li>
-            <li>Build a portfolio within 6–12 months</li>
-            <li>Apply for internships in the next cycle</li>
-        </ul>
-    </div>
-</section>
-
+            <h3>Career Plan (SMART)</h3>
+            <ul>
+                <li>Improve JavaScript skills within 3–6 months</li>
+                <li>Develop UI/UX skills within 3 months</li>
+                <li>Attend careers workshops throughout the year</li>
+                <li>Build a portfolio within 6–12 months</li>
+                <li>Apply for internships in the next cycle</li>
+            </ul>
+        </div>
+    </section>
 
     <!-- ---------- FOOTER ---------- -->
     <footer>
