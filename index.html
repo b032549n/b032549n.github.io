@@ -4,66 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariame Barry | Portfolio</title>
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-        header { background: #1e90ff; color: white; padding: 40px; text-align: center; }
-        section { padding: 40px; max-width: 900px; margin: auto; }
-        h2 { color: #1e90ff; }
-        .project { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-        footer { text-align: center; padding: 20px; background: #1e90ff; color: white; margin-top: 40px; }
+        /* ---------- GLOBAL STYLES ---------- */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f7f9fc;
+            color: #333;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        h1, h2, h3 { margin: 0; }
+
+        /* ---------- NAVBAR ---------- */
+        nav {
+            background: #1e90ff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+            color: white;
+        }
+
+        /* ---------- HERO SECTION ---------- */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom right, #1e90ff, #4aa3ff);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* ---------- SECTIONS ---------- */
+        section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #1e90ff;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        /* ---------- ABOUT SECTION ---------- */
+        .about-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            line-height: 1.7;
+        }
+
+        /* ---------- PROJECT GRID ---------- */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            background: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        /* ---------- MOBILE ---------- */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            nav { padding: 15px 20px; }
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Mariame Barry</h1>
-    <p>Aspiring Web Developer & UI/UX Designer</p>
-</header>
+    <!-- ---------- NAVBAR ---------- -->
+    <nav>
+        <strong>Mariame Barry</strong>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I’m a second-year Computer Science student at Staffordshire University specialising in 
-        Web Development and UI/UX Design. I enjoy creating clean, user-friendly digital experiences 
-        using HTML, CSS, JavaScript, and Figma.
-    </p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Web Development Project</h3>
-        <p>Built a multi-page responsive website using HTML, CSS, and JavaScript. Applied accessibility and layout principles.</p>
+    <!-- ---------- HERO SECTION ---------- -->
+    <div class="hero">
+        <h1>Aspiring Web Developer & UI/UX Designer</h1>
+        <p>Creating clean, modern and user‑friendly digital experiences</p>
     </div>
 
-    <div class="project">
-        <h3>Mobile App Design Project</h3>
-        <p>Designed a mobile app interface in Figma for new university students. Created wireframes and prototypes.</p>
-    </div>
+    <!-- ---------- ABOUT SECTION ---------- -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-box">
+            <p>
+                I’m a second-year Computer Science student at Staffordshire University specialising in 
+                Web Development and UI/UX Design. I enjoy creating clean, user-friendly digital experiences 
+                using HTML, CSS, JavaScript, and Figma.
+            </p>
+        </div>
+    </section>
 
-    <div class="project">
-        <h3>Cyber Security Group Project</h3>
-        <p>Collaborated with peers to research security concepts and produce a structured report.</p>
-    </div>
-</section>
+    <!-- ---------- PROJECTS SECTION ---------- -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-<section>
-    <h2>Skills</h2>
-    <p><strong>Technical:</strong> HTML, CSS, JavaScript, Figma, Python, SQL</p>
-    <p><strong>Professional:</strong> Communication, Teamwork, Problem-solving, Organisation</p>
-</section>
+        <div class="project-grid">
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: barryjalloh19@gmail.com</p>
-    <p>GitHub: github.com/b032549n</p>
-    <p>Location: Stoke-on-Trent, UK</p>
-</section>
+            <div class="project-card">
+                <h3>Web Development Project</h3>
+                <p>Built a multi-page responsive website using HTML, CSS, and JavaScript. Applied accessibility and layout principles.</p>
+            </div>
 
-<footer>
-    © 2026 Mariame Barry
-</footer>
+            <div class="project-card">
+                <h3>Mobile App Design Project</h3>
+                <p>Designed a mobile app interface in Figma for new university students. Created wireframes and prototypes.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Cyber Security Group Project</h3>
+                <p>Collaborated with peers to research security concepts and produce a structured report.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ---------- CONTACT SECTION ---------- -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="about-box">
+            <p>Email: <strong>barryjalloh19@gmail.com</strong></p>
+            <p>GitHub: <strong>github.com/b032549n</strong></p>
+            <p>Location: Stoke-on-Trent, UK</p>
+        </div>
+    </section>
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer>
+        © 2026 Mariame Barry — Portfolio
+    </footer>
 
 </body>
 </html>
